@@ -70,11 +70,11 @@ const Cart: React.FC = () => {
         <ProductList
           data={products}
           keyExtractor={item => item.id}
-          ListEmptyComponent={(
+          ListEmptyComponent={
             <EmptyContent>
               <EmptyContentText>Seu carrinho está vazio</EmptyContentText>
             </EmptyContent>
-          )}
+          }
           ListFooterComponent={<View />}
           ListFooterComponentStyle={{
             height: 80,
